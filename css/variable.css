@@ -1,0 +1,9 @@
+:root {
+    --header-padding: 10px;
+    --text-color: aliceblue;
+    --font-size--large: 70px;
+    --font-size--medium: 40px;
+    --font-size--small: 20px;
+    --back-color: #233240;
+    --basic-opcity: 0.9;
+}

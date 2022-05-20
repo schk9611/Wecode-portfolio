@@ -1,0 +1,31 @@
+/* css 초기화 */
+@import "reset.css";
+
+/* 변하는 값 통일 */
+@import "variable.css";
+
+/* 폰트 */
+@import "fonts.css";
+
+/* screen */
+@import "screen/header.css";
+@import "screen/main.css";
+@import "screen/footer.css";
+
+
+/* box-sizing의 역할을 알아보자 */
+* {
+    box-sizing: border-box;
+}
+
+/* 같은 페이지 내에서 부드럽게 이동해보자 */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

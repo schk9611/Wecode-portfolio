@@ -1,0 +1,122 @@
+.header {
+    /* z-index로 레이어 위로 올리기 */
+    z-index: 1;
+
+    /* 상단에 고정하기 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* flex 적용 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    /* 최소 높이를 지정 */
+    min-height: 100px; 
+
+    /* padding 지정 */
+    padding: 30px 10px;
+
+    /* header 폰트 패밀리 지정 */
+    font-family: 'EliceDigitalBaeum_Bold';
+
+    /* background 컬러 지정 */
+    background-color: var(--back-color);
+}
+
+.header__logo .logo {
+    font-size: 35px;
+    /* 안에 속한 텍스트를 대문자로 만들어준다! */
+    text-transform: uppercase;
+
+    /* 문자 사이 간격 조정 */
+    letter-spacing: 3px;
+
+    /* logo 텍스트색 지정 */
+    color: var(--text-color);
+
+    /* 그림자 만들기 */
+    text-shadow: 1px 1px 0px #347355,
+    3px 3px 0px #60BF81,
+    6px 6px 0px #93D94E;
+}
+
+/* logo 위로 마우스를 올리면 변경되는 것 */
+.header__logo .logo:hover {
+    color: yellow;
+}
+
+
+.header__nav .nav {
+    font-size: 25px;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__nav .nav .nav__item{
+    padding: 15px;
+}
+
+.header__nav .nav .nav__item a {
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+}
+
+/* list 위에 마우스를 올리면 그림자 효과 */
+.header__nav .nav .nav__item a:hover {
+    text-shadow: 
+    3px 3px 0px #93D94E;
+}
+
+.header__burger {
+    display: none;
+    position: absolute;
+    right: 30px;
+}
+
+.header__burger .burger__toggleBtn {
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+
+/* 가로 화면 800px이하가 되면 navbar를 클릭형으로 변경 */
+
+@media screen and (max-width: 800px) {
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        position: absolute;
+        left: 30px;
+    }
+
+    .header__nav .nav{
+        display: none;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .header__burger .burger__toggleBtn:hover {
+        color: yellowgreen;
+        /* 마우스 커서 바꾸기 */
+        cursor: pointer;
+    }
+
+    .header__nav .nav.active {
+        display: flex;
+        margin-top: 70px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

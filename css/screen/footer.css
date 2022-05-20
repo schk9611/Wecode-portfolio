@@ -1,0 +1,35 @@
+.footer {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-color: var(--back-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__icons {
+    margin-left: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__icons .icon {
+    color: aliceblue;
+}
+
+.footer__top {
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+}
+
+.footer__top i {
+    color: aliceblue;
+}
+
+.footer__top i:hover {
+    font-size: 50px;
+    transition-duration: 0.5s;
+}
