@@ -1,0 +1,53 @@
+.home {
+    position: relative;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+
+}
+
+.home__text {
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 5px;
+    font-size: 60px;
+    font-family: 'Vitro_core';
+    color: aliceblue;
+    margin: 300px 30px;
+}
+
+.home .maxWidth-1150 {
+    display: none;
+}
+
+.home .maxWidth-700 {
+    display: none;
+}
+
+/* home 구역 문자 나열 */
+@media screen and (max-width: 1150px) and (min-width: 700px) {
+    .home .origin-text {
+        display: none;
+    }
+    .home .maxWidth-1150 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .home .origin-text {
+        display: none;
+    }
+    .home .maxWidth-1150 {
+        display: none;
+    }
+
+    .home .maxWidth-700 {
+        display: block;
+    }
+}

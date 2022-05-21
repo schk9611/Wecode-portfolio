@@ -1,0 +1,87 @@
+.about {
+    background-color: var(--back-color);
+}
+
+.about .title__header {
+    font-size: 80px;
+    font-weight: 500;
+    color: var(--text-color);   
+}
+
+.about .content__info {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+.about .content__info__title {
+    text-align: center;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+.about .content__info__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.about .content__info__item {
+    font-size: 25px;
+    color: aliceblue;
+    text-align: center;
+}
+
+.about .content__photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .content__photo img {
+    border-radius: 50%;
+}
+
+
+/* dot-box 만들기*/
+.about .content .dot-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(80, 80, 80, 0.5);
+    text-align: left;
+}
+
+.about .content .dot-box .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.about .content .dot-box .dot.lt {
+    left: 0;
+    margin: -3px 0 0 -3px ;
+}
+
+.about .content .dot-box .dot.rt {
+    right: 0;
+    margin: -3px -3px 0 0 ;
+}
+
+.about .content .dot-box .dot.lb {
+    left: 0;
+    bottom: 0;
+    margin: 0 0 -3px -3px ;
+}
+
+.about .content .dot-box .dot.rb {
+    right: 0;
+    bottom: 0;
+    margin: 0 -3px -3px 0 ;
+}
+
+.about .content .dot-box .content__info__list {
+    padding: 30px;
+    height: 100%;
+}

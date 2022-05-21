@@ -11,6 +11,9 @@
 @import "screen/header.css";
 @import "screen/main.css";
 @import "screen/footer.css";
+@import "screen/home.css";
+@import "screen/about.css";
+@import "screen/goal.css";
 
 
 /* box-sizing의 역할을 알아보자 */

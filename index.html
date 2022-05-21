@@ -10,35 +10,44 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__logo">
-            <a class="logo" href="index.html"><h1>My Portfolio</h1></a>
+        <div class="logo">
+            <a class="logo__link" href="index.html">
+                <h1 class="logo__text logo__text--font">My Portfolio</h1>
+            </a>
         </div>
-        <div class="header__nav">
-            <ul class="nav">
-                <li class="nav__item"><a href="#home">HOME</a></li>
-                <li class="nav__item"><a href="#about">ABOUT</a></li><!-- about 페이지로 이동 -->
-                <li class="nav__item"><a href="#goal">GOAL</a></li><!-- goal 페이지로 이동 -->
-                <li class="nav__item"><a href="#contact">CONTACT</a></li><!-- contact(footer) 페이지로 이동 -->
+        <div class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__item__link nav__item__link--font" href="#home">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__item__link nav__item__link--font" href="#about">ABOUT</a>
+                </li><!-- about 페이지로 이동 -->
+                <li class="nav__item">
+                    <a class="nav__item__link nav__item__link--font" href="#goal">GOAL</a>
+                </li><!-- goal 페이지로 이동 -->
+                <li class="nav__item">
+                    <a class="nav__item__link nav__item__link--font" href="#contact">CONTACT</a>
+                </li><!-- contact(footer) 페이지로 이동 -->
             </ul>
         </div>
         <div class="header__burger">
-            <div class="burger__toggleBtn">
+            <div class="header__burger__toggleBtn">
                 <i class="fa-solid fa-rocket fa-2x"></i>        
             </div>
         </div>
     </header>
 
     <main class="main">
-        <section class="sentence_section main__section" id="home">
-            <div class="sentence_section__background"></div>
-            <p class="sentence_section__text basic-text">
+        <section class="home" id="home">
+            <p class="home__text origin-text">
                 어제보다 나은 오늘을
                 <br>
                 오늘보다 나은 내일을 꿈꾸는 개발자
                 <br>
                 손찬규입니다
             </p>
-            <p class="sentence_section__text maxWidth-1150">
+            <p class="home__text maxWidth-1150">
                 어제보다 나은 오늘을
                 <br>
                 오늘보다 나은 내일을
@@ -47,82 +56,114 @@
                 <br>
                 손찬규입니다
             </p>
-            <p class="sentence_section__text maxWidth-700">
+            <p class="home__text maxWidth-700">
                 꿈꾸는 개발자
                 <br>
                 🛸
                 <br>
-                엘리언입니다
+                ELIEN입니다
                 <br/>
                 👽
             </p>
         </section>
-        
-        <section class="about_section main__section" id="about">
-            <div class="about_section__title">
-                <h2 class="about_section__title__header section__header">
+
+        <section class="about main__section--share-size" id="about">
+            <div class="title">
+                <h2 class="title__header">
                     ABOUT
                 </h2>
             </div>
-            <div class="about_section__content">
-                <div class="about_section__content__photo">
-                    <img src="https://images.pexels.com/photos/1693085/pexels-photo-1693085.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
-                    alt="" width="400" height="400">
-                </div>
-                <div class="about_section__content__info">
-                    <div class="about_section__content__info__career about_section__content__info_set">
-                        <h3 class="info__career__title info__title_set">경력</h3>
-                        <ul class="info__career__content info__content_set">
-                            <li>열심히 채워갈 예정입니다.</li>
-                            <li>열심히 채워갈 예정입니다.</li>
-                            <li>열심히 채워갈 예정입니다.</li>
-                        </ul>
+            <div class="content">
+                <div class="content__info">
+                    <h3 class="content__info__title">Career</h3>
+                    <div class="content__info__box">
+                        <div class="dot-box">
+                            <div class="dot lt"></div>
+                            <div class="dot rt"></div>
+                            <div class="dot lb"></div>
+                            <div class="dot rb"></div>
+                            <ul class="content__info__list">
+                                <li class="content__info__item">Go With Wecode</li>
+                                <li class="content__info__item">Go Internship</li>
+                                <li class="content__info__item">Get a Job</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="about_section__content__info__interest about_section__content__info_set">
-                        <h3 class="info__interest__title info__title_set">흥미</h3>
-                        <ul class="info__interest__content info__content_set">
-                            <li>열심히 즐길 예정입니다.</li>
-                            <li>열심히 즐길 예정입니다.</li>
-                            <li>열심히 즐길 예정입니다.</li>
-                        </ul>
+                </div>
+                <div class="content__photo">
+                    <img src="https://images.pexels.com/photos/1693085/pexels-photo-1693085.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" 
+                    alt="" width="300" height="300">
+                </div>
+                <div class="content__info">
+                    <h3 class="content__info__title">Interest</h3>
+                    <div class="content__info__box">
+                        <div class="dot-box">
+                            <div class="dot lt"></div>
+                            <div class="dot rt"></div>
+                            <div class="dot lb"></div>
+                            <div class="dot rb"></div>
+                            <ul class="content__info__list">
+                                <li class="content__info__item">Self-Development🌱</li>
+                                <li class="content__info__item">Sports⚽️🏀🧗🎮</li>
+                                <li class="content__info__item">Coding🧑‍💻</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="goal_section main__section" id="goal">
-            <div class="goal_section__title">
-                <h2 class="goal_section__title__header section__header">
+        <section class="goal main__section--share-size" id="goal">
+            <div class="title">
+                <h2 class="title__header">
                     GOAL
                 </h2>
             </div>
-            <div class="goal_section__content">
-                <article class="goal_section__content__article ariticle__personal">
-                    <div class="goal_content__article__photo">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/11/21/27/desk-3076954_1280.jpg" width="280" height="250">
+            <div class="content">
+                <div class="goal-box">
+                    <div class="goal-box__top">
+                        <img src="/picture/growth.png" alt="" width="300" height="300">
                     </div>
-                    <div class="goal_content__article__text">
-                        <p>열심히 하기</p>
+                    <div class="goal-box__bottom">
+                        <p class="goal-box__text">
+                            한걸음! 한걸음!
+                            <br>
+                            끊임없이 "성장"하는
+                            <br>
+                            개발자
+                        </p>
                     </div>
-                </article>
-                <article class="goal_section__content__article article__team">
-                    <div class="goal_content__article__photo">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/11/21/27/desk-3076954_1280.jpg" width="280" height="250">
+                </div>
+                <div class="goal-box">
+                    <div class="goal-box__top">
+                        <img src="/picture/teamwork.png" alt="" width="300" height="300">
                     </div>
-                    <div class="goal_content__article__text">
-                        <p>열심히 하기</p>
+                    <div class="goal-box__bottom">
+                        <p class="goal-box__text">
+                            혼자가면 재미없다!
+                            <br>
+                            함께하는
+                            <br>
+                            "믿음직한" 동료
+                        </p>
                     </div>
-                </article>
-                <article class="goal_section__content__article article__dream">
-                    <div class="goal_content__article__photo">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/11/21/27/desk-3076954_1280.jpg" width="280" height="250">
+                </div>
+                <div class="goal-box">
+                    <div class="goal-box__top">
+                        <img src="/picture/siliycon-valley.png" alt="" width="300" height="300">
                     </div>
-                    <div class="goal_content__article__text">
-                        <p>열심히 하기</p>
+                    <div class="goal-box__bottom">
+                        <p class="goal-box__text">
+                            견학이라도 가보자!
+                            <br>
+                            개발자들의 성지
+                            <br>
+                            "실리콘 밸리 맛보기"
+                        </p>
                     </div>
-                </article>
+                </div>
             </div>
+            
         </section>
     </main>
 
