@@ -17,10 +17,21 @@
 }
 
 .main .content {
-    margin-top: 50px;
+    margin: 50px 0px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 50px;
     border: 1px solid #fff;
-    padding: 100px;
+    padding: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .main .content {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 100px;
+    }
+
+    .main__section--share-size {
+        height: auto;
+    }
 }

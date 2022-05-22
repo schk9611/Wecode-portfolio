@@ -23,6 +23,7 @@
 .about .content__info__list {
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
 }
 
 .about .content__info__item {
