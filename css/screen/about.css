@@ -15,6 +15,7 @@
 
 .about .content__info__title {
     text-align: center;
+    font-family: 'Cafe24Ssurround';
     font-size: 40px;
     color: aliceblue;
 }
@@ -26,6 +27,7 @@
 
 .about .content__info__item {
     font-size: 25px;
+    font-family: 'Donoun-Medium';
     color: aliceblue;
     text-align: center;
 }

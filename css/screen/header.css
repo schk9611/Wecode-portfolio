@@ -26,7 +26,7 @@
 
 .logo .logo__link .logo__text--font{
     /* logo__text의 폰트 속성 정의 */
-    font-family: 'EliceDigitalBaeum_Bold';
+    font-family: 'establishRetrosansOTF';
     font-size: 35px;
 
     /* 문자 사이 간격 조정 */
@@ -78,7 +78,7 @@
 
 .nav .nav__list .nav__item .nav__item__link--font {
     font-size: 25px;
-    font-family: 'EliceDigitalBaeum_Bold';
+    font-family: 'establishRetrosansOTF';;
     color: var(--text-color);
 }
 

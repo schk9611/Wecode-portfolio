@@ -12,6 +12,7 @@
 .main .title__header {
     font-size: 80px;
     font-weight: 500;
+    font-family: 'establishRetrosansOTF';
     color: var(--text-color);   
 }
 
