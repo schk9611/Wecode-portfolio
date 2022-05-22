@@ -27,9 +27,11 @@
 
 .footer__top i {
     color: aliceblue;
+
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .footer__top i:hover {
     font-size: 50px;
-    transition-duration: 0.5s;
 }
