@@ -1,19 +1,22 @@
 .home {
-    position: relative;
+    /* scroll로 내리기 때문에 각 섹션의 크기를 지정 */
     height: 900px;
+    /* 자식요소인 text의 위치를 조정하기 위해 flex로 만듦 */
     display: flex;
+    /* 가운데에 위치하기 */
     justify-content: center;
-    align-items: flex-start;
     background-image: url('https://images.pexels.com/photos/3374210/pexels-photo-3374210.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-repeat: no-repeat;
+    /* 배경화면이 home의 크기에 맞도록 조정 */
     background-size: cover;
-    opacity: 0.9;
 
 }
 
 .home__text {
+    /* 글이 가운데 정렬하도록 */
     text-align: center;
+    /* 문자 간격 조정(위아래 간격) */
     line-height: 100px;
+    /* 문자 간격 조정(좌우 간격) */
     letter-spacing: 5px;
     font-size: 60px;
     font-family: 'Vitro_core';
@@ -23,37 +26,44 @@
     /* 네온 효과 */
     text-shadow: 0 0 21px #fff, 0 0 92px #0fa, 0 0 151px #0fa;
     
-    /* 깜빡임 효과 적용 */
+    /* 아래에서 keyframe으로 만든 깜빡임(flicker) 효과 적용(효과 작용 시간, 반복횟수, 반복이 매번 처음부터 시작하지 않고 자연스럽게 이어지도록 지정) */
     animation: flicker 1.5s infinite alternate;
 }
 
 .home .maxWidth-1150 {
+    /* 기본 설정을 none으로 지정 */
     display: none;
 }
 
 .home .maxWidth-700 {
+    /* 기본 설정을 none으로 지정 */
     display: none;
 }
 
 /* home 구역 문자 나열 */
 @media screen and (max-width: 1150px) and (min-width: 700px) {
     .home .origin-text {
+        /* 위 사이즈가 되면 기존에 보이던 문장은 none으로 변경 */
         display: none;
     }
     .home .maxWidth-1150 {
+        /* 원하는 문장이 나오도록 block으로 변경 */
         display: block;
     }
 }
 
 @media screen and (max-width: 700px) {
     .home .origin-text {
+        /* 위 사이즈가 되면 기존에 보이던 문장은 none으로 변경 */
         display: none;
     }
     .home .maxWidth-1150 {
+        /* 위 사이즈가 되면 기존에 보이던 문장은 none으로 변경 */
         display: none;
     }
 
     .home .maxWidth-700 {
+        /* 원하는 문장이 나오도록 block으로 변경 */
         display: block;
     }
 }
@@ -61,6 +71,7 @@
 
 /* 깜빡이는 효과 */
 @keyframes flicker {
+    /* 퍼센트로 지정 */
     0%,
     18%,
     22%,
