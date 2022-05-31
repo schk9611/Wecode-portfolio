@@ -1,10 +1,9 @@
 /* about과 공유되는 속성은 main.css에서 작성 */
 
 .goal {
+    /* 배경관련 */
     background-image: url('https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-    background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.9;
 }
 
 .goal-box__bottom {
